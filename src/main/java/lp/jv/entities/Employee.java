@@ -4,7 +4,6 @@ public class Employee {
     public String name;
     public double salary;
     public double tax;
-    public double percentage;
 
     public double netSalary(){
         return salary - tax;
@@ -15,9 +14,8 @@ public class Employee {
 
     }
 
-    public double increaseSalary(){
-        double i = (percentage/100) * salary;
-        return salary += i - tax;
+    public void increaseSalary(double percentage){
+        salary += salary * percentage / 100.0;
     }
 
 
