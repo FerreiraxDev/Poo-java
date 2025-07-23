@@ -30,8 +30,7 @@ public class Main {
         std.n3 = sc.nextDouble();
 
 
-
-
+        std.imprimirNotas();
 
     }
 }
